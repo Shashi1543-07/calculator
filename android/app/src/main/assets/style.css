@@ -223,6 +223,14 @@ body {
     .buttons-grid {
         padding-bottom: 0;
     }
+
+    .user-name {
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 1000;
+        text-align: right;
+    }
 }
 
 .main-wrapper {
