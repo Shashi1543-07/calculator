@@ -251,3 +251,5 @@ document.addEventListener('keydown', e => {
         calculator.updateDisplay();
     }
 });
+
+`r`ndocument.addEventListener("DOMContentLoaded", () => { const el = document.getElementById("username"); if (el) { el.textContent = "shashi" + "</>"; } });
