@@ -62,7 +62,7 @@ class Calculator {
             case '*':
                 computation = prev * current;
                 break;
-            case '÷':
+            case '/':
                 if (current === 0) {
                     this.currentOperand = 'Error';
                     this.hindiResult = 'गड़बड़ है भाई'; // Easter egg for div by zero
@@ -90,6 +90,7 @@ class Calculator {
 
     getDisplayNumber(number) {
         const stringNumber = number.toString();
+        if (stringNumber === 'Error') return 'Error';
         const integerDigits = parseFloat(stringNumber.split('.')[0]);
         const decimalDigits = stringNumber.split('.')[1];
         let integerDisplay;
